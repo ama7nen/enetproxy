@@ -17,7 +17,7 @@ int main() {
 
     // this causes seg fault on linux idk.........
 #ifdef _WIN32
-    std::thread http(http::run, "178.20.230.208", "17191");
+    std::thread http(http::run, "127.0.0.1", "17191");
     http.detach();
     printf("HTTP server is running.\n");
 #endif
